@@ -8,30 +8,65 @@
     <header>
         <h1>🍃 Leaf & Bean Café</h1>
     <nav>
-        <a href="#menu">เมนู</a>
+        <a href="#drinkmenu">เมนู</a>
         <a href="#about">เกี่ยวกับเรา</a>
         <a href="#contact">ติดต่อ</a>
     </nav>
     </header>
-    <h1>Welcome to Sasiwimon Vongbutda</h1>
-    <p>This is my first webpage!</p>
-    
-    <h2>About Me</h2>
-    <p>I am learning HTML.</p>
-    
-    <h2>My Favorite Fruits</h2>
-    <ul>
-        <li>Mango</li>
-        <li>Orange</li>
-        <li>Apple</li>
-    </ul>
-    
-    <h2>Useful Links</h2>
-    <a href="https://www.w3schools.com">Learn at W3Schools</a><br>
-    <a href="page/basichtml2.html">page2</a><br>
-    <a href="basichtml3.html">page3</a><br>
-    <a href="aboutme.html">aboutme</a><br>
-    <br><br>
-    <button>Click Me!</button>
+    <main>
+    <!-- ส่วน Hero -->
+    <section>
+        <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
+        <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
+    </section>
+
+    <!-- ส่วนเมนู -->
+    <section id = "drinkmenu">
+        <h2>เมนูแนะนำ</h2>
+        <!-- จะเพิ่มการ์ดเมนูใน Section 2 -->
+         <!-- div ครอบเมนูทั้งหมด — เตรียมจัดเป็น Grid ใน CSS -->
+<div class="menu-grid">
+    <!-- การ์ดเมนูที่ 1 -->
+    <div class="card">
+        <h3 class="card-title">☕ Espresso</h3>
+        <p class="card-desc">เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
+        <p class="price">ราคา: <span>฿55</span></p>
+    </div>
+    <!-- การ์ดที่ 2 -->
+    <div class="card">
+        <h3 class="card-title">🍵 Matcha Latte <span>BEST SELLER</span></h3>
+        <p class="card-desc">ชาเขียวเกรดพรีเมียมจากอุจิ</p>
+        <p class="price">฿75</p>
+    </div>
+    <!-- การ์ดที่ 3 -->
+    <div class="card">
+        <h3 class="card-title">🧊 Cold Brew</h3>
+        <p class="card-desc">สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
+        <p class="price">฿65</p>
+    </div>
+</div>
+    </section>
+
+    <!-- เรื่องราวร้าน — เนื้อหาอิสระ ใช้ <article> -->
+    <article id = "about">
+        <h2>เรื่องราวของเรา</h2>
+        <p>Leaf & Bean Café เกิดจากความรักในกาแฟ...</p>
+        <figure>
+            <img src="cafe-interior.jpg" alt="บรรยากาศภายในร้าน">
+            <figcaption>บรรยากาศสบาย ๆ ภายใน Leaf & Bean Café</figcaption>
+        </figure>
+    </article>
+</main>
+<aside>
+    <h3>🕐 เวลาเปิด-ปิด</h3>
+    <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
+    <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
+    <p>สถานะ: <span>เปิดอยู่</span></p>
+</aside>
+
+<footer id = "contact">
+    <p>&copy; 2026 Leaf & Bean Café</p>
+    <p>📍 ม.ศิลปากร วิทยาเขตสนามจันทร์ จ.นครปฐม</p>
+</footer>
 </body>
 </html>
