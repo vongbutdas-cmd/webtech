@@ -1,0 +1,96 @@
+body {
+    background-color: #f0fdf4;
+}
+body {
+    font-family: "Itim", cursive;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #374151;
+    background-color: #f0fdf4;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem;
+}
+.price {
+    color: #4fb345;
+    font-weight: bold;
+}
+.bestseller {
+    background-color: #fef9c3; /* เหลืองอ่อน */
+    color: #854d0e;            /* น้ำตาลทอง */
+}
+.new {
+    background-color: #dcfce7; /* เขียวอ่อน */
+    color: #166534;            /* เขียวเข้ม */
+}
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.reccommend-section{
+    text-align: center;
+}
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #15803d,         /* เขียวเข้ม */
+        #22c55e          /* เขียวสด */
+    );
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.site-header {
+    background-color: #166534;
+    color: white;
+    padding: 1rem 2rem;
+}
+#menu {
+    background-color: #f0fdf4;
+    padding: 3rem 2rem;
+}
+.site-footer {
+    background-color: #14532d;
+    color: rgba(255, 255, 255, 0.8);   /* ขาว 80% */
+    text-align: center;
+    padding: 2rem;
+}
+.main-nav a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+}
+.main-nav a:hover {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: underline;
+}
+
+/* Badge text */
+.badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;   /* ตัวพิมพ์ใหญ่ */
+    letter-spacing: 0.05em;
+}
+/* ── Cards ── */
+.card {
+    background: white;
+    border: 1px solid #dcfce7;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+.card.featured {
+    border: 2px solid #22c55e;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+.card-desc {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
