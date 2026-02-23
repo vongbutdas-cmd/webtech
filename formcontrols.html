@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formcontrols</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <form>
+        <!-- Text Input -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <div class="form-text">We'll never share your email.</div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+
+        <!-- Select -->
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country">
+                <option selected>Choose...</option>
+                <option value="th">Thailand</option>
+                <option value="us">USA</option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+
+        <!-- Text Addon -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Username">
+        </div>
+
+        <!-- Multiple Inputs -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" placeholder="Amount">
+            <span class="input-group-text">.00</span>
+        </div>
+
+        <!-- Button Addon -->
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search...">
+            <button class="btn btn-primary" type="button">Go</button>
+        </div>
+
+        <!-- With Icon -->
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
+
+        <!-- Valid State -->
+        <div class="mb-3">
+            <label class="form-label">Valid input</label>
+            <input type="text" class="form-control is-valid" value="Correct!">
+            <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <!-- Invalid State -->
+        <div class="mb-3">
+            <label class="form-label">Invalid input</label>
+            <input type="text" class="form-control is-invalid">
+            <div class="invalid-feedback">Please provide a valid value.</div>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+            <label for="floatingEmail">Email address</label>
+        </div>
+
+        <!-- Basic Alerts -->
+        <div class="alert alert-success" role="alert">
+            <strong>Success!</strong> Your action was completed.
+        </div>
+
+        <div class="alert alert-danger" role="alert">
+            <strong>Error!</strong> Something went wrong.
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+            <strong>Warning!</strong> Please check your input.
+        </div>
+
+        <div class="alert alert-info" role="alert">
+            <i class="bi bi-info-circle"></i> This is an info message.
+        </div>
+
+        <!-- Dismissible Alert -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Warning!</strong> This can be dismissed.
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+
+        <!-- Alert with Link -->
+        <div class="alert alert-primary" role="alert">
+            Check out this <a href="#" class="alert-link">important link</a>.
+        </div>
+
+        <!-- Button to trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Open Modal
+        </button>
+
+        <!-- Modal Structure -->
+        <div class="modal fade" id="myModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Body -->
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <!-- Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Container -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div class="toast" role="alert" id="myToast">
+                <div class="toast-header">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>Just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    Hello! This is a toast message.
+                </div>
+            </div>
+        </div>
+
+        <!-- Button to show toast -->
+        <button class="btn btn-primary" onclick="showToast()">
+            Show Toast
+        </button>
+
+        <script>
+            function showToast() {
+                const toast = new bootstrap.Toast(document.getElementById('myToast'));
+                toast.show();
+            }
+        </script>
+
+        <!-- Checkbox -->
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="agree">
+            <label class="form-check-label" for="agree">
+                I agree to the terms
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
