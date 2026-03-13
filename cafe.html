@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--phone-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>680710818 cafe</title>
+    <!--bt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <style>
+        body {
+            font-family: 'Itim', cursive;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .hero-section {
+            width: 100%;
+            height: 250px; 
+            background-image: url(https://img.salehere.co.th/p/1200x0/2024/04/03/cisb8sib0ssm.jpg);
+            background-size: 50;     
+            background-position: 50% 45%; 
+            background-repeat: no-repeat;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        
+        .custom-carousel-container {
+            max-width: 1000px;
+            margin: 0 auto;    
+        }
+
+        .carousel-img {
+            width: 100%;
+            height: 400px;     
+            object-fit: cover; 
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            background-size: auto;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+            padding: 0 15px;
+        }
+        
+        
+        .section-title::before, .section-title::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 100px; 
+            height: 1px;
+            background-color: #333;
+        }
+        .section-title::before { right: 100%; }
+        .section-title::after { left: 100%; }
+
+       
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: #333;
+            border-radius: 50%;
+            padding: 15px;
+        }
+
+        footer {
+            border-top: 1px solid #333;
+            padding: 20px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Cafe</a>
+            <div class="ms-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="menu.html">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section"></header>
+
+    <main class="container my-5 py-4">
+        
+        <section class="mb-5 text-center">
+            <h4 class="section-title">เครื่องดื่มแนะนำ</h4>
+            <div class="custom-carousel-container">
+                <div id="drinkCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6ri65rmXiZVqoxqfErTm9lkFIb4yRRjbWKnJVUm6owvxekfLVrE.jpg" class="carousel-img" alt="Drink 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/736x/cc/32/48/cc32481f44aedc6161f4514aa51e86ed.jpg" class="carousel-img" alt="Drink 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#drinkCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#drinkCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h4 class="section-title">Bakery แนะนำ</h4>
+            <div class="custom-carousel-container">
+                <div id="bakeryCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/736x/73/cd/d0/73cdd08550b1f203d8c188bc931e4ad9.jpg" 
+                            background-position: 50% 45%;
+                            background-size: 50; 
+                            class="carousel-img" alt="Bakery 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/1200x/94/54/7c/94547cabb98e90e9651bb789d357516f.jpg" 
+                            background-position: 50% 45%;
+                            background-size: 50; 
+                            class="carousel-img" alt="Bakery 2">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#bakeryCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>ข้อมูลติดต่อ</p>
+        </div>
+    </footer>
+
+    <!--bt-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
